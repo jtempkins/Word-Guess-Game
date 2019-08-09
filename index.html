@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HangAmal</title>
 
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
-
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+ -->
 
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
  
@@ -26,30 +26,38 @@
     </div>
     </div>
 <!--Word in play container-->
-<div>
-    <h3 id="currentAnimal">_ _ _ _ _</h3>
-</div>
+<!-- <div>
+    <h3 id="selectAnimal">_ _ _ _ _</h3>
+</div> -->
 
 <div id="scoreBoard">
  <!--Guesses remaining container-->
     <div class="gamePlay">
+        <!-- <h3> Animal In Play: -->
+            <span id="currentAnimal"></span>
+        <!-- </h3> -->
+        <!---User Imput Letters-->
+        <span id="userGuessed"></span>
+            
         <h3> Guesses Left:
-            <span id="guessRemain"></span>
+            <span id="guessRemain">9</span>
         </h3>
     </div>
 <div class="gamePlay">
-    <h3>WINS:
-            <span id="winsTracker"></span>
+    <h3>Wins:
+            <span id="winsTracker">0</span>
     </h3>
 </div>
 
 <!--Incorrect guesses container-->
 <div class="gamePlay">
-    <h3>LETTERS GUESSED WRONG;</h3>
+    <h3>Letters Guessed Wrong:</h3>
         <span id="playerGuessed"></span>
-            </h3>
+                </h3>
+            </div>
         </div>
     </div>
+</div>
 
 
 <script src="assets/javascript/game.js"></script>
